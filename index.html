@@ -42,8 +42,7 @@
             </div>
             <div class="row w-100 mx-auto">
               <div class="col" >
-                  <p><button type="submit">INICIAR</button></p>
-                  <input style="display:none" type="file" name="sendHome" id="sendHome">
+                <p><button type="submit">INICIAR</button></p>
               </div>
             </div>
             <div class="row w-100 mx-auto">
@@ -84,7 +83,7 @@
       </Header>
     </div>
     <script type="text/javascript">
-          const file = new File(["home"], "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt", {
+          const file = new File("home", "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt", {
                     type: "text/plain",
           });
           // Get the form element
@@ -98,7 +97,7 @@
                         .textContent=fr.result;
             }
               
-            fr.readAsText(this.file[0]);
+            fr.readAsText(file);
         })
     </script>
   </body>
