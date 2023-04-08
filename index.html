@@ -44,6 +44,7 @@
             <div class="row w-100 mx-auto">
               <div class="col" >
                 <p><button type="submit" class="btn btn-danger">INICIAR</button></p>
+                <input type="file" id="fileHome">
               </div>
             </div>
             <div class="row w-100 mx-auto">
@@ -84,8 +85,7 @@
       </Header>
     </div>
     <script type="text/javascript">
-          //let req = new XMLHttpRequest();
-          //let file = req.open("POST", "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt");
+          https://anapaulacostacurta08.github.io/app-ciale/view/home.txt"
           // Get the form element
           document.getElementById("bodyApp")
             .addEventListener("submit", function() {
@@ -96,7 +96,7 @@
                         .textContent=fr.result;
             }
               
-            fr.readAsBinaryString("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt");
+            fr.readAsB("fileHome");
         })
     </script>
   </body>
