@@ -90,7 +90,6 @@
             .addEventListener('submit', function() {
               
             var fr=new FileReader();
-            fr.append("home", 
             fr.onload=function(){
                 document.getElementById('bodyApp')
                         .textContent=fr.result;
