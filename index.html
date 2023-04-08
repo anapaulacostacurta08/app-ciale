@@ -83,13 +83,14 @@
       </Header>
     </div>
     <script type="text/javascript">
-          const file = new File("home", "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt");
+          let req = new XMLHttpRequest();
+          let file = req.open("POST", 'https://anapaulacostacurta08.github.io/app-ciale/view/home.txt');
           // Get the form element
           document.getElementById("bodyApp")
             .addEventListener('submit', function() {
               
             var fr=new FileReader();
-            
+            fr.append("home", 
             fr.onload=function(){
                 document.getElementById('bodyApp')
                         .textContent=fr.result;
