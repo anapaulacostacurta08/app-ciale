@@ -84,6 +84,9 @@
       </Header>
     </div>
     <script type="text/javascript">
+          const file = new File(["home"], "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt", {
+                    type: "text/plain",
+          });
           // Get the form element
           document.getElementById("bodyApp")
             .addEventListener('submit', function() {
@@ -95,7 +98,7 @@
                         .textContent=fr.result;
             }
               
-            fr.readAsText("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt");
+            fr.readAsText(this.file[0]);
         })
     </script>
   </body>
