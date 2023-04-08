@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
     });
 
     // Set up our request
-    XHR.open("POST", "https://example.com/cors.php");
+    XHR.open("POST", "https://anapaulacostacurta08.github.io/app-ciale/view/home.html");
 
     // The data sent is what the user provided in the form
     XHR.send(FD);
