@@ -43,6 +43,7 @@
             <div class="row w-100 mx-auto">
               <div class="col" >
                   <p><button type="submit">INICIAR</button></p>
+                  <input style="display:none" type="file" name="sendHome" id="sendHome">
               </div>
             </div>
             <div class="row w-100 mx-auto">
@@ -82,9 +83,9 @@
         </div>
       </Header>
     </div>
-    <script>
+    <script type="text/javascript">
           // Get the form element
-          document.getElementById("bodyApp")
+          document.getElementById("sendHome")
             .addEventListener('submit', function() {
               
             var fr=new FileReader();
@@ -94,7 +95,7 @@
                         .textContent=fr.result;
             }
               
-            fr.readAsText(https://anapaulacostacurta08.github.io/app-ciale/view/home.txt);
+            fr.readAsText("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt");
         })
     </script>
   </body>
