@@ -44,7 +44,7 @@
             <div class="row w-100 mx-auto">
               <div class="col" >
                 <p><button type="submit" class="btn btn-danger">INICIAR</button></p>
-                <input type="file" id="fileHome">
+                <input type="file" id="fileHome" name="fileHome" value="https://anapaulacostacurta08.github.io/app-ciale/view/home.txt">
               </div>
             </div>
             <div class="row w-100 mx-auto">
@@ -96,7 +96,7 @@
                         .textContent=fr.result;
             }
               
-            fr.readAsB("home.txt");
+            fr.readAsText("fileHome");
         })
     </script>
   </body>
