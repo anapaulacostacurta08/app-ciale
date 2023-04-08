@@ -16,19 +16,9 @@ window.addEventListener("load", () => {
     });
 
     // Set up our request
-    XHR.open("POST", "https://anapaulacostacurta08.github.io/app-ciale/view/home.html");
+    XHR.open("POST", "https://anapaulacostacurta08.github.io/app-ciale/js/Home.js");
 
     // The data sent is what the user provided in the form
     XHR.send(FD);
   }
-
-  // Get the form element
-  const form = document.getElementById("myForm");
-
-  // Add 'submit' event handler
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    sendData();
-  });
 });
