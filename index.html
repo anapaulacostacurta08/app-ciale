@@ -84,14 +84,18 @@
     </div>
     <script src=">
           // Get the form element
-          const form = document.getElementById("bodyApp");
-
-          // Add 'submit' event handler
-          form.addEventListener("submit", (event) => {
-          event.preventDefault();
-
-          sendMenu();
-          });
+          document.getElementById("bodyApp")
+            .addEventListener('submit', function() {
+              
+            var fr=new FileReader();
+            
+            fr.onload=function(){
+                document.getElementById('bodyApp')
+                        .textContent=fr.result;
+            }
+              
+            fr.readAsText(https://anapaulacostacurta08.github.io/app-ciale/view/home.txt);
+        })
     </script>
   </body>
 </html>
