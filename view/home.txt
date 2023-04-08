@@ -1,0 +1,45 @@
+       <div class="row w-100 mx-auto">
+         <div class="col" >
+              <p class="text-dark">.</p>
+           </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p class="text-dark">.</p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p class="text-dark">.</p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p><button type="button">INICIAR</button></p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p><button type="button">INICIAR</button></p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p><button type="button">INICIAR</button></p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p class="text-dark">.</p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p class="text-dark">.</p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p class="text-dark">.</p>
+            </div>
+        </div>
