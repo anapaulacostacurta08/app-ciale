@@ -1,8 +1,10 @@
-function sendData() {
+window.addEventListener("load", () => {
+  function sendData() {
     const XHR = new XMLHttpRequest();
 
     // Bind the FormData object and the form element
     const FD = new FormData(form);
+
     // Define what happens on successful data submission
     XHR.addEventListener("load", (event) => {
       alert(event.target.responseText);
@@ -18,4 +20,15 @@ function sendData() {
 
     // The data sent is what the user provided in the form
     XHR.send(FD);
-}
+  }
+
+  // Get the form element
+  const form = document.getElementById("myForm");
+
+  // Add 'submit' event handler
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    sendData();
+  });
+});
