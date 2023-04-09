@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: black;
-  min-height: 25vh;
+  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@
 
 .App-footer {
   background-color: black;
-  min-height: 25vh;
+  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
