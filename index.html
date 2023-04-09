@@ -20,10 +20,10 @@
            </div>
         </div>
       </Header>
-      <form id="bodyApp" class="App-body">
-           <div id="telaInicial" class="row w-100 mx-auto">
+      <form id="bodyApp">
+           <div id="telaInicial" class="App-body row w-100 mx-auto" >
               <div class="col" >
-                <button type="button" id="btnIniciar" class="btn btn-danger">INICIAR</button>
+                <button type="button" id="btnIniciar" class="btn btn-danger" >INICIAR</button>
               </div>
             </div>
        </form>
@@ -55,9 +55,9 @@
         xhttp.send();
       }
        document.getElementById("bodyApp")
-            .addEventListener("btnIniciar", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt"));
+            .addEventListener("btnIniciar", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt", "telaInicial"));
         document.getElementById("bodyApp")
-            .addEventListener("btnNovaInspecao", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/NovaInspecao.txt"));
+            .addEventListener("btnNovaInspecao", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/NovaInspecao.txt", "telaHome"));
     </script>
   </body>
 </html>
