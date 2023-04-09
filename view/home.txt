@@ -1,17 +1,17 @@
     <div id="telaHome" class="App-body row w-100 mx-auto">   
        <div class="row w-100 mx-auto">
             <div class="col" >
-                <button id="btnNovaInspecao" type="submit">NOVA</button>
+                <button name="btnNovaInspecao" class="btn btn-danger" type="submit">NOVA</button>
             </div>
         </div>
         <div class="row w-100 mx-auto">
             <div class="col" >
-                <p><button type="button">INICIAR</button></p>
+                <p><button type="button" class="btn btn-danger">CONTINUAR</button></p>
             </div>
         </div>
         <div class="row w-100 mx-auto">
             <div class="col" >
-                <p><button type="button">INICIAR</button></p>
+                <p><button type="button" class="btn btn-danger">ALTERAR</button></p>
             </div>
         </div>
    </div>
