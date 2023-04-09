@@ -91,12 +91,13 @@
       fetch(urlFile)
         .then(response => response.text())
         .then(text => {
-        const contextFile = text.split("\n");
+         var contextFile = text;
         })
        document.getElementById("bodyApp")
             .addEventListener("submit", function() {
               
-       document.getElementById("conteudo").innerHTML = array;
+            document.getElementById("conteudo").innerHTML = contextFile;
+       })
     </script>
   </body>
 </html>
