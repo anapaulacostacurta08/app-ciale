@@ -86,7 +86,7 @@
       </Header>
     </div>
     <script type="text/javascript">
-      const urlFile = "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt";
+      
       function loadDoc() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -94,7 +94,7 @@
           var res = this.responseText;
           document.getElementById("conteudo").innerHTML = res; 
         }};
-        xhttp.open("POST", urlFile, true);
+        xhttp.open("GET",  "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt", true);
         xhttp.send();
       }
       
