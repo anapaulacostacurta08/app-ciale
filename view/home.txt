@@ -1,4 +1,4 @@
-    <div id="telaHome" class="App-body">   
+    <div id="telaHome" class="App-body row w-100 mx-auto">   
        <div class="row w-100 mx-auto">
             <div class="col" >
                 <button id="btnNovaInspecao" type="button">NOVA</button>
