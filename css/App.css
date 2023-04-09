@@ -31,4 +31,8 @@
   color: #61dafb;
 }
 
+.App-button{
+  min-height: 5vh;
+  nim-width: 5vh;
+}
 
