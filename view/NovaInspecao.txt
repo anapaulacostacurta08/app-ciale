@@ -1,0 +1,17 @@
+<div id="telaNovaInspecao" class="App-body row w-100 mx-auto">   
+       <div class="row w-100 mx-auto">
+            <div class="col" >
+                <button id="btnInspetor" type="button">INSPETOR</button>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p><button type="button">INICIAR</button></p>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto">
+            <div class="col" >
+                <p><button type="button">INICIAR</button></p>
+            </div>
+        </div>
+   </div>
