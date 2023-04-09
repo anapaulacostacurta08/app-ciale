@@ -19,14 +19,16 @@
               <h1>CIALE INSPETOR</h1>
            </div>
         </div>
-        <form id="bodyApp">
+      </Header>
+      <form id="bodyApp" class="App-body">
            <div id="telaInicial" class="row w-100 mx-auto">
               <div class="col" >
                 <button type="button" id="btnIniciar" class="btn btn-danger">INICIAR</button>
               </div>
             </div>
-        </form>
-          <div class="row w-100 mx-auto">
+       </form>
+      <footer class="App-footer">
+        <div class="row w-100 mx-auto">
             <div class="col">
               <img src="https://anapaulacostacurta08.github.io/app-ciale/imagens/img_selo_academia.png"  width="20%"/>
               <img src="https://anapaulacostacurta08.github.io/app-ciale/imagens/img_logo_fundo_preto.jpeg"  width="50%"/>
@@ -39,10 +41,20 @@
             <hr class="border-5"/>
           </div>
         </div>
-      </Header>
+      </footer>
     </div>
-    <script type="text/javascript" src="https://anapaulacostacurta08.github.io/app-ciale/js/loadFile.js">
-        document.getElementById("bodyApp")
+    <script type="text/javascript">
+      function loadDoc(url, id) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var res = this.responseText;
+          document.getElementById(id).innerHTML = res; 
+        }};
+        xhttp.open("GET", url , true);
+        xhttp.send();
+      }
+       document.getElementById("bodyApp")
             .addEventListener("btnIniciar", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt"));
         document.getElementById("bodyApp")
             .addEventListener("btnNovaInspecao", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/NovaInspecao.txt"));
