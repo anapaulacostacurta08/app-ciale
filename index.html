@@ -21,6 +21,7 @@
         </div>
 
           <form id="bodyApp">
+           <div id="conteudo">
             <div class="row w-100 mx-auto">
               <div class="col" >
                   <p class="text-dark">.</p>
@@ -67,6 +68,7 @@
                   <p class="text-dark">.</p>
               </div>
             </div>
+           </div>
           </form>
         
         <div class="row w-100 mx-auto">
@@ -85,19 +87,16 @@
       </Header>
     </div>
     <script type="text/javascript">
-          //https://anapaulacostacurta08.github.io/app-ciale/view/home.txt"
-          // Get the form element
-          document.getElementById("bodyApp")
+      const urlFile = "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt";
+      fetch(urlFile)
+        .then(response => response.text())
+        .then(text => {
+        const contextFile = text.split("\n");
+        })
+       document.getElementById("bodyApp")
             .addEventListener("submit", function() {
               
-            var fr=new FileReader();
-            fr.onload=function(){
-                document.getElementById("bodyApp")
-                        .textContent=fr.result;
-            }
-              
-            fr.readAsText(this.files[0]);
-        })
+       document.getElementById("conteudo").innerHTML = array;
     </script>
   </body>
 </html>
