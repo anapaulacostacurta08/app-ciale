@@ -19,13 +19,13 @@
               <h1>CIALE INSPETOR</h1>
            </div>
         </div>
-        <form id="bodyApp">
-           <div class="row w-100 mx-auto">
+        <div id="bodyApp">
+           <div id="telaInicial" class="row w-100 mx-auto">
               <div class="col" >
-                <button type="submit" class="btn btn-danger">INICIAR</button>
+                <button type="button" id="btnIniciar" class="btn btn-danger">INICIAR</button>
               </div>
             </div>
-        </form>
+        </div>
           <div class="row w-100 mx-auto">
             <div class="col">
               <img src="https://anapaulacostacurta08.github.io/app-ciale/imagens/img_selo_academia.png"  width="20%"/>
@@ -41,6 +41,11 @@
         </div>
       </Header>
     </div>
-    <script type="text/javascript" src="https://anapaulacostacurta08.github.io/app-ciale/home.js"></script>
+    <script type="text/javascript" src="https://anapaulacostacurta08.github.io/app-ciale/js/loadFile.js">
+        document.getElementById("bodyApp")
+            .addEventListener("btnIniciar", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt"));
+        document.getElementById("bodyApp")
+            .addEventListener("btnNovaInspecao", loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/NovaInspecao.txt"));
+    </script>
   </body>
 </html>
