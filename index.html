@@ -23,7 +23,7 @@
       <form id="bodyApp">
            <div id="telaInicial" class="App-body row w-100 mx-auto" >
               <div class="col" >
-                <button type="button" class="btn btn-danger App-button">INICIAR</button>
+                <button type="submit" class="btn btn-danger App-button">INICIAR</button>
               </div>
             </div>
        </form>
@@ -55,7 +55,8 @@
         xhttp.send();
       }
        document.getElementById("bodyApp")
-            .addEventListener("submit", function() {
+            .addEventListener("submit", (e) => {
+                 e.preventDefault();
                  loadDoc("https://anapaulacostacurta08.github.io/app-ciale/view/home.txt", "bodyApp");
        })
    </script>
