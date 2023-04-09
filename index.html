@@ -45,7 +45,6 @@
             <div class="row w-100 mx-auto">
               <div class="col" >
                 <p><button type="submit" class="btn btn-danger">INICIAR</button></p>
-                <input type="file" id="fileHome" name="fileHome" value="https://anapaulacostacurta08.github.io/app-ciale/view/home.txt">
               </div>
             </div>
             <div class="row w-100 mx-auto">
@@ -91,14 +90,14 @@
       function loadDoc() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-        var res = this.responseText;
-         document.getElementById("conteudo").innerHTML = res; 
-       }
-      };
-      xhttp.open("GET", "seu_arquivo_txt.txt", true);
-      xhttp.send();
+          if (this.readyState == 4 && this.status == 200) {
+          var res = this.responseText;
+          document.getElementById("conteudo").innerHTML = res; 
+        }};
+        xhttp.open("POST", urlFile, true);
+        xhttp.send();
       }
+      
       document.getElementById("bodyApp")
             .addEventListener("submit", function() {
             loadDoc();
