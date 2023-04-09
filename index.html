@@ -19,63 +19,19 @@
               <h1>CIALE INSPETOR</h1>
            </div>
         </div>
-
-          <form id="bodyApp">
-           <div id="conteudo">
-            <div class="row w-100 mx-auto">
+        <form id="bodyApp">
+           <div class="row w-100 mx-auto">
               <div class="col" >
-                  <p class="text-dark">.</p>
+                <button type="submit" class="btn btn-danger">INICIAR</button>
               </div>
             </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                  <p class="text-dark">.</p>
-              </div>
+        </form>
+          <div class="row w-100 mx-auto">
+            <div class="col">
+              <img src="https://anapaulacostacurta08.github.io/app-ciale/imagens/img_selo_academia.png"  width="20%"/>
+              <img src="https://anapaulacostacurta08.github.io/app-ciale/imagens/img_logo_fundo_preto.jpeg"  width="50%"/>
             </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                  <p class="text-dark">.</p>
-              </div>
-            </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                  <p class="text-dark">.</p>
-              </div>
-            </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                <p><button type="submit" class="btn btn-danger">INICIAR</button></p>
-              </div>
-            </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                  <p class="text-dark">.</p>
-              </div>
-            </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                  <p class="text-dark">.</p>
-              </div>
-            </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                  <p class="text-dark">.</p>
-              </div>
-            </div>
-            <div class="row w-100 mx-auto">
-              <div class="col" >
-                  <p class="text-dark">.</p>
-              </div>
-            </div>
-           </div>
-          </form>
-        
-        <div class="row w-100 mx-auto">
-          <div class="col">
-            <img src="https://anapaulacostacurta08.github.io/app-ciale/imagens/img_selo_academia.png"  width="20%"/>
-            <img src="https://anapaulacostacurta08.github.io/app-ciale/imagens/img_logo_fundo_preto.jpeg"  width="50%"/>
-          </div>
-        </div>    
+          </div>    
         <div class="row w-100">
           <div class="col ">
             <hr class="border-5"/>
@@ -85,21 +41,6 @@
         </div>
       </Header>
     </div>
-    <script type="text/javascript">
-      
-      function loadDoc() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-          var res = this.responseText;
-          document.getElementById("conteudo").innerHTML = res; 
-        }};
-        xhttp.open("GET",  "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt", true);
-        xhttp.send();
-      }
-      
-      document.getElementById("bodyApp")
-            .addEventListener("submit", loadDoc());
-    </script>
+    <script type="text/javascript" src="https://anapaulacostacurta08.github.io/app-ciale/home.js"></script>
   </body>
 </html>
