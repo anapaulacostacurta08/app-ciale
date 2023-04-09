@@ -88,15 +88,20 @@
     </div>
     <script type="text/javascript">
       const urlFile = "https://anapaulacostacurta08.github.io/app-ciale/view/home.txt";
-      fetch(urlFile)
-        .then(response => response.text())
-        .then(text => {
-         var contextFile = text;
-        })
-       document.getElementById("bodyApp")
+      function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        var res = this.responseText;
+         document.getElementById("conteudo").innerHTML = res; 
+       }
+      };
+      xhttp.open("GET", "seu_arquivo_txt.txt", true);
+      xhttp.send();
+      }
+      document.getElementById("bodyApp")
             .addEventListener("submit", function() {
-              
-            document.getElementById("conteudo").innerHTML = contextFile;
+            loadDoc();
        })
     </script>
   </body>
