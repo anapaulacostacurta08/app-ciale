@@ -1,6 +1,7 @@
+    <div id="telaHome">   
        <div class="row w-100 mx-auto">
             <div class="col" >
-                <p><button type="button">INICIAR</button></p>
+                <button id="btnNovaInspecao" type="button">NOVA</button>
             </div>
         </div>
         <div class="row w-100 mx-auto">
@@ -13,3 +14,4 @@
                 <p><button type="button">INICIAR</button></p>
             </div>
         </div>
+   </div>
