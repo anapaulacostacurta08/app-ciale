@@ -6,7 +6,7 @@
         </div>
         <div class="row w-100 mx-auto">
             <div class="col" >
-                <p><button    type="button" class="btn btn-danger" name="btnContinuarInpecao">CONTINUAR</button></p>
+                <p><button    type="button" class="btn btn-danger" name="btnContinuarInpecao"> CONTINUAR </button></p>
             </div>
         </div>
         <div class="row w-100 mx-auto">
