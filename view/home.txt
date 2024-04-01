@@ -6,12 +6,17 @@
         </div>
         <div class="row w-100 mx-auto">
             <div class="col" >
-                <p><button type="button" class="btn btn-danger">CONTINUAR</button></p>
+                <p><button    type="button" class="btn name="btnContinuarInpecao" btn-danger">CONTINUAR</button></p>
             </div>
         </div>
         <div class="row w-100 mx-auto">
             <div class="col" >
-                <p><button type="button" class="btn btn-danger">ALTERAR</button></p>
+                <p><button type="button" name="btnAlterarInspecao" class="btn btn-danger">ALTERAR</button></p>
+            </div>
+        </div>
+<div class="row w-100 mx-auto">
+            <div class="col" >
+                <p><button type="button" name="btnCadastros" class="btn btn-danger">CADASTROS</button></p>
             </div>
         </div>
    </div>
